@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 600px;
+            height: 400px;
+            border: 1px solid lightgray;
+        }
+    </style>
+
+    <script type="text/javascript" src="buttoncontinue.js"> </script>
+
+    <script type="text/javascript" src="buttonnextlevel.js"> </script>
+
+
+</head>
+
+<body onload="initApp();">
+    <p><b>Goal of the game</b>: to click on all blue nodes up until every node is red.</p>
+    <p>Each time you press on the left button, the red nodes expands in the following way: they all contaminate every node they are linked with.</p>
+    <p>After selecting a blue node, press the button on the left to go to the next turn.</p>
+    <p> When all nodes are red, press the right button to go to the next level. A new graph will be generated.</p>
+<p>How many turns will it take for every node to be red ? This is to be discovered !</p>
+    <p>
+
+        <input type="button" id="buttoncontinue" value="Click to start!">
+        <input type="button" id="buttonnextlevel" value="Go to level 1">
+
+        <div id="div1"></div>
+        <div id="mynetwork"></div>
+        <script type="text/javascript" src="app.js"></script>
+    </p>
+
+</body>
+
+</html>
